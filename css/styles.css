@@ -1,0 +1,67 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+    background: rgb(206, 201, 201);
+    color: rgb(20, 20, 20);
+    font-family: 'Roboto', sans-serif;
+    line-height: .3rem;
+}
+.oscuro{ 
+    background-color: #1f1f1f; 
+    color: #f1eded; 
+}
+ 
+.firma {
+    width: 32rem;
+    height: 9rem;
+    border: 1px solid #f1eded;
+    display: grid;
+    grid-template-columns: 38% 50% 12%;
+    grid-template-rows: repeat(1, 1fr);
+    
+}
+.firma__img {
+
+    width: 100%;
+    height: 85%;
+
+    
+}
+.firma__texto {
+    width: 32rem;
+    height: 9rem;
+    border: 1px solid #f1eded;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.firma__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.texto__lema {
+    color: rgb(19, 103, 182);
+}
+.svg {
+    max-width: .8rem;
+    max-height: .8rem;
+    
+    
+}
+.lks__svg {
+    max-width: 2rem;
+}
