@@ -14,11 +14,18 @@ function hola() {
   miFirma.onclick = showAlert;
 };
 function showAlert(event) {
-  let dato, resultado;
+  let resultado;
 
-  dato = window.prompt("¿cuál es tu nombre?");
+  let misDatos = {
 
-  resultado = `Tu firma está lista ${dato} `;
+    nombre: prompt("¿cuál es tu nombre?"),
+    puesto: prompt("¿cuál es tu puesto?"),
+    correo: prompt("¿cuál es tu correo?"),
+    numero: prompt("¿cuál es tu número?"),
+
+  };
+
+  resultado = `Estos son tus datos: ${misDatos.nombre + ' ' + misDatos.puesto + ' ' + ' ' +  misDatos.correo + ' ' + misDatos.numero} `;
 
   document.write(resultado);
 }
