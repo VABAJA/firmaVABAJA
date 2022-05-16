@@ -23,6 +23,7 @@
             <p>Empieza dando click <input type="button" id="boton" value="aquí" onclick="hola();">
 
             </p>
+
             <section class="firma">
                 <a href="https:www.vabaja.com.mx">
                     <img class="firma__img" src="./img/logo vabaja-transparente-08.png" alt="logo-vabaja">
@@ -60,13 +61,103 @@
                 </div>
             </section>
 
-            <div>
+            <div class="code">
                 <h3>Copia y Pega este código en tu firma de correo</h3>
-                <pre>
-                    <code>
+                <textarea name="" id="" cols="40" rows="10">
+                    <style>
+                html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    background: rgb(206, 201, 201);
+    color: rgb(20, 20, 20);
+    font-family: 'Roboto', sans-serif;
+    line-height: .3rem;
+}
+.oscuro{ 
+    background-color: #1f1f1f; 
+    color: #f1eded; 
+}
+ .firma {
+    width: 32rem;
+    height: 9rem;
+    display: grid;
+    grid-template-columns: 38% 50% 12%;
+    grid-template-rows: repeat(1, 1fr);
+}
+.firma__img {
+    width: 100%;
+    height: 85%; 
+}
+.firma__texto {
+    width: 32rem;
+    height: 9rem;
+    border: 1px solid #f1eded;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.firma__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+.texto__lema {
+    color: rgb(19, 103, 182);
+}
+.svg {
+    max-width: .8rem;
+    max-height: .8rem;  
+}
+.lks__svg {
+    max-width: 2rem;
+}
 
-                    </code>
-                </pre>
+                    </style>
+                    <section class="firma">
+                        <a href="https:www.vabaja.com.mx">
+                            <img class="firma__img" src="./img/logo vabaja-transparente-08.png" alt="logo-vabaja">
+        
+                            <div clas="firma__texto">
+                                <h4 class="texto__nombre">Jorge de Jesus Barrera Valencia</h4>
+                                <p class="texto__puesto">Software & Soporte</p>
+        
+                                <a href="https://wa.me/+528115028945">
+                                    <p class="texto__numero"></p><img class="svg" src="./img/mobile-screen-button-solid.svg"
+                                        alt="movil">
+                                    +52 8115028945</p>
+                                </a>
+                                <a href="mailto:jbarrera@vabaja.com.mx">
+                                    <p class="texto__correo"></p><img class="svg" src="./img/at-solid.svg" alt="at-correo">
+                                    jbarrera@vabaja.com.mx</p>
+                                </a>
+        
+                                <p class="texto__lema">Listen, Learn, Improve & Repeat</p>
+        
+                            </div>
+                        </a>
+        
+                        <div class="firma__links">
+                            <a href="https://www.github.com/jobarv">
+                                <img class="lks__svg" src="./img/github-alt-brands.svg" alt="github-alt">
+                            </a>
+                            <a href="https://www.linkedin.com/in/jobarv">
+                                <img class="lks__svg" src="./img/linkedin-brands.svg" alt="linkedin">
+                            </a>
+                            <a href="https://www.vabaja.com.mx">
+                                <img class="lks__svg" src="./img/earth-americas-solid.svg" alt="website">
+                            </a>
+                        </div>
+                    </section>
+                </textarea>
+
             </div>
         </main>
     </div>

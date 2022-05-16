@@ -21,7 +21,6 @@ body {
 .firma {
     width: 32rem;
     height: 9rem;
-    border: 1px solid #f1eded;
     display: grid;
     grid-template-columns: 38% 50% 12%;
     grid-template-rows: repeat(1, 1fr);
@@ -33,6 +32,10 @@ body {
     height: 85%;
 
     
+}
+.code {
+    display: flex;
+    flex-direction: column;
 }
 .firma__texto {
     width: 32rem;
